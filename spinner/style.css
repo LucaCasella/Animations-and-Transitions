@@ -1,0 +1,34 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading-spinner {
+    height: 80px;
+    width: 80px;
+
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+
+    border-radius: 50%;
+    border: 15px lightgrey solid;
+    border-top: 15px gray solid;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
